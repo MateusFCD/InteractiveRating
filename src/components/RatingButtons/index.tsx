@@ -1,7 +1,11 @@
 import { Box, Grid } from "@mui/material";
 import Button from "@mui/material/Button";
 
-export default function RatingButtons({ setItems }: any) {
+interface Props {
+  setItems: any;
+}
+
+export default function RatingButtons({ setItems }: Props) {
   return (
     <Box>
       <Grid container spacing={2}>
