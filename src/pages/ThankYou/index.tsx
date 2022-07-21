@@ -7,14 +7,14 @@ interface Props {
 
 export default function ThankYou({ setRate, items }: Props) {
   return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        margin: "20rem 2rem",
-      }}
-    >
-      <Card sx={{ width: "500px", padding: "3%", borderRadius: "15px" }}>
+    <Box>
+      <Card
+        sx={{
+          width: "500px",
+          padding: "3%",
+          borderRadius: "15px",
+        }}
+      >
         <span>You selected {items} out of 5</span>
         <h2>Thank you!</h2>
         <p>

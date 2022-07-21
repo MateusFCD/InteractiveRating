@@ -1,18 +1,15 @@
-import { TrafficRounded } from "@mui/icons-material";
 import { Box, Grid } from "@mui/material";
 import Button from "@mui/material/Button";
-import { useState } from "react";
-import ThankYou from "../../pages/ThankYou";
 
-export default function RatingButtons() {
-  const [items, setItems] = useState(number);
-
+export default function RatingButtons({ setItems }: any) {
   return (
     <Box>
       <Grid container spacing={2}>
         {number.map((item, index) => (
           <Grid key={index}>
-            <Button onClick={() => setItems(items)}>{item["value"]}</Button>
+            <Button onClick={() => setItems(item["value"])}>
+              {item["value"]}
+            </Button>
           </Grid>
         ))}
       </Grid>
