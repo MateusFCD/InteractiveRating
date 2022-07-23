@@ -27,6 +27,7 @@ export const theme = createTheme({
           width: "400px",
           borderRadius: "15px",
           padding: "2%",
+          margin: "10% auto 0 auto",
         },
       },
     },
@@ -38,11 +39,40 @@ export const theme = createTheme({
             borderRadius: "50%",
             fontSize: "1rem",
             padding: "0px",
-            height: "9vh",
-            backgroundColor: "hsl(216, 12%, 54%)",
+            height: "6vh",
+            backgroundColor: "#33363a",
+            color: "hsl(216, 12%, 54%)",
+            fontWeight: "700",
           },
         },
       ],
     },
   },
 });
+
+export const Container = styled.div`
+  .star {
+    background-color: #33363a;
+    padding: 5%;
+    border-radius: 50%;
+  }
+  .imgThank {
+    margin-bottom: 3%;
+  }
+  h6 {
+    color: hsl(25, 97%, 53%);
+    background: #343941;
+    padding: 2%;
+    font-weight: 400;
+    border-radius: 30px;
+    width: 150px;
+    margin: auto;
+  }
+
+  h2 {
+    color: white;
+  }
+  p {
+    color: hsl(217, 12%, 63%);
+  }
+`;
